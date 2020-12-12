@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
+  <title>payment mockup</title>
+</head>
+<body>
+  <section class="section--container" id="payment-confirmation">
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+      <a class="nav--link">
+        <img src="./assets/icons/homepage.svg" alt="homepage">
+      </a>
+      <a class="nav--link">
+        <img src="./assets/icons/profile.svg" alt="profile">
+      </a>
+    </nav>
+
+    <!-- MODUL ADDING SERVICES -->
+    <h1>Select additional services</h1>
+    <div class="modul--container" id="services">
+      <form class="form">
+        <legend class="form--legend">Services</legend>
+        <label class="input--container">
+          <div class="input--container--services">
+            <input id="massage" name="massage" type="radio">
+            <span class="radiobtn" >
+            </span>
+            <div class="label--text--container">
+              <span class="label--text--title">Massage and Spa</span>
+              <span class="label--text--price">+$50.00</span>
+            </div>
+          </div>
+        </label>
+        <label class="input--container">
+          <div class="input--container--services">
+            <input id="massage" name="massage" type="radio">
+            <span class="radiobtn" >
+            </span>
+            <div class="label--text--container">
+              <span class="label--text--title">Airport pickupa</span>
+              <span class="label--text--price">+$20.00</span>
+            </div>
+          </div>
+        </label>
+        <label class="input--container">
+          <div class="input--container--services">
+            <input id="massage" name="massage" type="radio">
+            <span class="radiobtn" >
+            </span>
+            <div class="label--text--container">
+              <span class="label--text--title">Breakfast</span>
+              <span class="label--text--price">+$15.00</span>
+            </div>
+          </div>
+        </label>
+      </form>
+    </div>
+
+    <!-- MODUL FOR PAYMENT -->
+    <div class="modul--container" id="payment-method">
+      <form class="form">
+        <legend class="form--legend">Payment for booking</legend>
+        <div class="input--container">
+          <select id="select-card" class="select">
+            <option value="visa">Credit or debit Visa card</option>
+            <option value="mastercard">Credit or debit MasterCard</option>
+          </select>
+        </div>
+        <div class="input--container input--container--cardNumber">
+          <label class="label--cardNumber">
+            Card Number
+            <input type="text">
+          </label>
+        </div>
+        <div class="helper--container">
+          <div class="input--container input--expiration">
+            <input type="text" placeholder="Expiration">
+          </div>
+          <div class="input--container input--cvv">
+            <input type="text" placeholder="CVV">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- PAYMENT TIMELINE -->
+    <div id="payment-timeline" class="timeline--container">
+      <button class="timeline--button">Back</button>
+      <div class="timeline--icons--container">
+        <div class="icon--container">
+          <div class="outer--circle">
+            <div class="inner--circle"></div>
+          </div>
+          <p>Booking</p>
+        </div>
+        <div class="icon--container">
+          <div class="outer--circle">
+            <div class="inner--circle"></div>
+          </div>
+          <p>Checkout</p>
+        </div>
+        <div class="icon--container">
+          <div class="outer--circle inprogress">
+            <div class="inner--circle inprogress"></div>
+          </div>
+          <p>Confirm</p>
+        </div>
+      </div>
+      <button class="timeline--button active">Next</button>
+    </div>
+  </div>
+</body>
+</html>
